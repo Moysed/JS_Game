@@ -32,7 +32,7 @@ class Game{
 		});
 
 		const game = this;
-		this.loadJSON("flowers", function(data, game){
+		this.loadJSON("assets", function(data, game){
 			game.spriteData = JSON.parse(data);
 			game.spriteImage = new Image();
 			game.spriteImage.src = game.spriteData.meta.image;
